@@ -1,0 +1,13 @@
+.navigation-bar-filler,
+.navigation-bar {
+  width: 100%;
+  height: 65px;
+}
+.navigation-bar {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  background-color: red;
+  z-index: 100;
+}

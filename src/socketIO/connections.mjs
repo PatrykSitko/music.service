@@ -1,34 +1,19 @@
 import { io as socketIO } from "../../bin/www.mjs";
+import emmitConnectionToken from "./connection/emit/pendingConnectionToken.mjs";
+import onConnectionTokenRecieved from "./connection/on/connectionTokenRecieved.mjs";
+import emmitRegions from "./connection/emit/regions";
+import onRequestGenres from "./connection/on/requestGenres";
 
 export default {
   connect: () => {
     socketIO.on("connection", client => {
-      client.emit("categories", [
-        "Akcja",
-        "Animowane",
-        "Biografie",
-        "Dokumentalne",
-        "Dramat",
-        "Familijne",
-        "Fantasty",
-        "Historyczne",
-        "Horror",
-        "Katastroficzne",
-        "Komedia",
-        "Kostiumowe",
-        "Musical",
-        "Obyczajowy",
-        "Polskie",
-        "Przygodowe",
-        "Sci-Fi",
-        "Sensacyjne",
-        "Sport",
-        "Thriller",
-        "Wojenne"
-      ]);
-      client.on("store", clientData => {
-        console.log(clientData);
-      });
+      emmitConnectionToken(/*to*/ client);
+      onConnectionTokenRecieved(/*by*/ client);
+      emmitRegions(/*to*/ client);
+      onRequestGenres(client);
+      // client.on("disconnect", clientData => {
+      //   deleteConnectionToken(clientData.token);
+      // });
     });
   }
 };

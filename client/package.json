@@ -12,7 +12,6 @@
     "redux": "^4.0.4",
     "redux-first-routing": "^0.3.0",
     "redux-thunk": "^2.3.0",
-    "shaka-player": "^2.5.6",
     "socketio": "^1.0.0"
   },
   "scripts": {
@@ -21,6 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "http://localhost:9000",
   "eslintConfig": {
     "extends": "react-app"
   },

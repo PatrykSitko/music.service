@@ -1,4 +1,5 @@
-import action from "../../../actions/all";
+import windowResized from "../../../actions/window/resize";
+import mouse from "../../../actions/mouse";
 
 export default store => {
   trackWindowSizeState(store);
@@ -13,14 +14,14 @@ export default store => {
 
 function trackWindowSizeState(store) {
   store.dispatch(
-    action.windowResized({
+    windowResized({
       inner: { width: window.innerWidth, height: window.innerHeight },
       outer: { width: window.outerWidth, height: window.outerHeight }
     })
   );
   window.addEventListener("resize", event => {
     store.dispatch(
-      action.windowResized({
+      windowResized({
         ...store.getState().state.window,
         inner: { width: window.innerWidth, height: window.innerHeight },
         outer: { width: window.outerWidth, height: window.outerHeight }
@@ -76,7 +77,7 @@ function trackMousedownState(store) {
       __proto__
     } = event;
     store.dispatch(
-      action.mousedown(
+      mouse.down(
         { ...store.getState().state.mouse, up: false },
         {
           altKey,
@@ -174,7 +175,7 @@ function trackMouseclickState(store) {
       __proto__
     } = event;
     store.dispatch(
-      action.mouseclick(
+      mouse.click(
         { ...store.getState().state.mouse },
         {
           altKey,
@@ -272,7 +273,7 @@ function trackMouseupState(store) {
       __proto__
     } = event;
     store.dispatch(
-      action.mouseup(
+      mouse.up(
         { ...store.getState().state.mouse, down: false },
         {
           altKey,
@@ -370,7 +371,7 @@ function trackMousemoveState(store) {
       __proto__
     } = event;
     store.dispatch(
-      action.mousemove(
+      mouse.move(
         { ...store.getState().state.mouse },
         {
           altKey,
@@ -468,7 +469,7 @@ function trackMouseoverState(store) {
       __proto__
     } = event;
     store.dispatch(
-      action.mouseover(
+      mouse.over(
         { ...store.getState().state.mouse },
         {
           altKey,
@@ -566,7 +567,7 @@ function trackMouseoutState(store) {
       __proto__
     } = event;
     store.dispatch(
-      action.mouseout(
+      mouse.out(
         { ...store.getState().state.mouse },
         {
           altKey,
@@ -671,7 +672,7 @@ function trackMousewheelState(store) {
       __proto__
     } = event;
     store.dispatch(
-      action.mousewheel(
+      mouse.wheel(
         { ...store.getState().state.mouse },
         {
           altKey,

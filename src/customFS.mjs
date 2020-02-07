@@ -4,6 +4,7 @@ import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 import question from "./questions.mjs";
 import child_process from "child_process";
+import parser from "fast-xml-parser";
 
 const projectPath = path.join(dirname(fileURLToPath(import.meta.url)), "../");
 const exec = util.promisify(child_process.exec);
@@ -124,6 +125,33 @@ async function getFileName(filePath) {
     return filepath.slice(filepath.lastIndexOf("\\") + 1, filepath.length);
   }
 }
+function readXML(path, encoding = "UTF-8", xmlOptions) {
+  return new Promise((resolve, reject) => {
+    let xmlData = undefined;
+    try {
+      xmlData = fs.readFileSync(path, encoding);
+      if (parser.validate(xmlData, xmlOptions)) {
+        resolve(parser.parse(xmlData, xmlOptions));
+      } else {
+        reject(xmlData);
+      }
+    } catch (e) {
+      reject(e);
+    }
+  });
+}
+function readXMLSync(path, encoding = "UTF-8", xmlOptions) {
+  try {
+    const xmlData = fs.readFileSync(path, encoding);
+    if (parser.validate(xmlData, xmlOptions)) {
+      return parser.parse(xmlData, xmlOptions);
+    } else {
+      return undefined;
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
 
 export default {
   ...fs,
@@ -134,5 +162,7 @@ export default {
   isCommandAvailable,
   addUserPathEntry,
   getFileName,
-  projectPath
+  projectPath,
+  readXML,
+  readXMLSync
 };

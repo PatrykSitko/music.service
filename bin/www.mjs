@@ -9,8 +9,9 @@ import debugLib from "debug";
 import http from "http";
 import socketIO from "socket.io";
 import socketIOConnections from "../src/socketIO/connections.mjs";
-
+import mySQL from "mysql";
 const debug = debugLib("streaming.service:server");
+
 /**
  * Get port from environment and store in Express.
  */
@@ -23,6 +24,21 @@ app.set("port", port);
 
 const server = http.createServer(app);
 export const io = socketIO(server);
+export const mySQLConnection = (() => {
+  const connection = mySQL.createConnection({
+    host: "localhost",
+    port: "3306",
+    user: "root",
+    password: "password",
+    database: "music_player"
+  });
+
+  connection.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected with MySQL music_player database.");
+  });
+  return connection;
+})();
 
 /**
  * Listen on provided port, on all network interfaces.

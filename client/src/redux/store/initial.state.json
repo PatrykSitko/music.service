@@ -1,10 +1,10 @@
 {
-  "title": "Streaming.Service",
+  "title": "Forever Young",
   "state": {
     "user": {
-      "language": "en"
+      "connectionToken": null,
+      "authenticationToken": null
     },
-    "movies": { "categories": [] },
     "mouse": {
       "down": false,
       "click": false,
@@ -17,6 +17,399 @@
     "window": {
       "inner": null,
       "outer": null
+    },
+    "links": [],
+    "requestState": { "music": { "genres": { "a": { "added": null } } } },
+    "music": {
+      "current": {
+        "regions": [],
+        "genres": [],
+        "artists": [],
+        "albums": []
+      },
+      "regions": {
+        "a": []
+      },
+      "genres": {
+        "a": [
+          {
+            "title": "Afrobeat",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African",
+            "selected": false
+          },
+          {
+            "title": "African hip hop",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African",
+            "selected": false
+          },
+          {
+            "title": "African heavy metal",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African",
+            "selected": false
+          },
+          {
+            "title": "Apala",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African",
+            "selected": false
+          }
+        ],
+        "b": [
+          {
+            "title": "Benga",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Boeremusiek",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Boomba",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Bongo Flava",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Bikutsi",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "c": [
+          {
+            "title": "Cape Jazz",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Chimurenga",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Congolese rumba",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Coupé-Décalé",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "d": [],
+        "e": [],
+        "f": [
+          {
+            "title": "Fuji",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "g": [
+          {
+            "title": "Genge",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Gqom",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "h": [
+          {
+            "title": "Highlife",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Hiplife",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "i": [
+          {
+            "title": "Igbo highlife",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Igbo rap",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Isicathamiya",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "j": [
+          {
+            "title": "Jit",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Jùjú",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "k": [
+          {
+            "title": "Kadongo Kamu",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Kizomba",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Kuduro",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Kwaito",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Kwela",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "l": [],
+        "m": [
+          {
+            "title": "Makossa",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Maloya",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Marabi",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Marrabenta",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Mbalax",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Mbaqanga",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Mbube",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+
+          {
+            "title": "Morna",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "n": [
+          {
+            "title": "Ndombolo",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "o": [
+          {
+            "title": "Ohangla",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Orutu",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "p": [
+          {
+            "title": "Palm-wine",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "q": [],
+        "r": [
+          {
+            "title": "Raï",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "s": [
+          {
+            "title": "Sakara",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Sega",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Seggae",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Semba",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Shangaan electro",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Soukous",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "t": [
+          {
+            "title": "Kwassa kwassa",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          },
+          {
+            "title": "Taarab",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ],
+        "u": [],
+        "v": [],
+        "w": [],
+        "x": [],
+        "y": [],
+        "z": [
+          {
+            "title": "Zouglou",
+            "image": "https://pxlbbq.com/wp-content/uploads/2019/07/t%C3%A9l%C3%A9chargement-14.png",
+            "region": "African"
+          }
+        ]
+      }
+    },
+    "player": {
+      "song": {
+        "time": { "requested": null, "now": null, "total": null },
+        "album": { "previous": null, "current": null, "next": null },
+        "list": {
+          "previous": [
+            {
+              "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+              "title": "title",
+              "artist": "artist",
+              "description": "description",
+              "sound": "http://www.aneks.org.pl/muzyka/do_bialego_rana.mp3"
+            },
+            {
+              "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+              "title": "title",
+              "artist": "artist",
+              "description": "description",
+              "sound": "http://www.aneks.org.pl/muzyka/7czerwonych_roz.mp3"
+            }
+          ],
+          "next": [
+            {
+              "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+              "title": "title",
+              "artist": "artist",
+              "description": "description",
+              "sound": "http://www.aneks.org.pl/muzyka/_odnajde.mp3"
+            },
+            {
+              "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+              "title": "title",
+              "artist": "artist",
+              "description": "description",
+              "sound": "http://www.aneks.org.pl/muzyka/bajo_bongo.mp3"
+            },
+            {
+              "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+              "title": "title",
+              "artist": "artist",
+              "description": "description",
+              "sound": "http://www.aneks.org.pl/muzyka/balkanica.mp3"
+            },
+            {
+              "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+              "title": "title",
+              "artist": "artist",
+              "description": "description",
+              "sound": "https://themamaship.com/music/Catalog/ABBA%20Lido%20Medley%20SHORT%202015.mp3"
+            },
+            {
+              "image": "https://www.bigstockphoto.com/images/homepage/module-6.jpg",
+              "title": "title",
+              "artist": "artist",
+              "description": "description",
+              "sound": "https://themamaship.com/music/Catalog/FP%20What's%20Goin'%20On-Mercy%20Me%201.mp3"
+            }
+          ]
+        },
+        "current": {
+          "image": "thumbnail/Selena%20Gomez/2010/A%20Year%20Without%20Rain",
+          "title": "A Year Without Rain",
+          "artist": "Selena Gomez",
+          "description": "description",
+          "sound": "http://localhost:9000/music/Selena%20Gomez/2010/A%20Year%20Without%20Rain"
+        }
+      },
+      "playing": false,
+      "volume": 1.0,
+      "muted": false,
+      "shuffle": false,
+      "repeat": null
     }
   },
   "router": {

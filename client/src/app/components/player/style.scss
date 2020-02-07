@@ -1,0 +1,133 @@
+.player-bottom-filler {
+  width: 100%;
+  height: 70px;
+}
+
+.player-container {
+  position: fixed;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 100;
+}
+.player-button-group-controls-song {
+  position: absolute;
+  margin: 7px 3px;
+}
+.player-play-button {
+  width: 60px;
+  height: 60px;
+  float: left;
+}
+.player-previous-button,
+.player-next-button {
+  float: left;
+  margin: 0 8px;
+  margin-top: 14px;
+  width: 32px;
+  height: 32px;
+}
+.player-shuffle-button {
+  width: 25px;
+  height: 25px;
+  margin-top: 3px;
+  margin-left: 3px;
+  float: left;
+}
+
+.player-button-group-controls-volume {
+  float: right;
+  margin: 7px 3px;
+}
+
+.player-mute-button {
+  margin: 0 4px;
+  margin-top: 17.5px;
+  width: 25px;
+  height: 25px;
+  float: right;
+}
+.player-slider,
+.player-slider-nob,
+.player-slider-volume-filler {
+  width: 100px;
+  background-color: whitesmoke;
+}
+
+.player-slider {
+  float: right;
+  display: flex;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  border-radius: 50px;
+  box-shadow: 0 0 0.75px 0.75px black;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.player-slider.hidden {
+  opacity: 0;
+}
+.player-slider-nob {
+  width: 10px;
+  height: 10px;
+  margin-top: -4.5px;
+  background-color: white;
+  margin-left: calc(100% - 10px);
+  border-radius: 50px;
+  box-shadow: 0 0 0.75px 0.75px black;
+}
+.player-slider-filler {
+  background-color: grey;
+  height: 2px;
+}
+.player-slider.volume {
+  position: absolute;
+  right: 36px;
+}
+.player-slider.duration {
+  margin: 0;
+  width: 100%;
+  height: 3px;
+  background-color: yellow;
+}
+.player-slider-nob.duration {
+  margin-left: 0;
+}
+.player-slider-filler.duration {
+  background-color: grey;
+  height: 3px;
+}
+.player-display-time {
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  margin-top: 21px;
+}
+
+.player-display-description-song.container {
+  height: max-content;
+  margin-bottom: -50px;
+  background-color: blue;
+}
+
+.player-display-description-song.image {
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 33%;
+  float: left;
+}
+
+.player-display-description-song.title.artist {
+  float: left;
+  margin-top: 16px;
+  margin-left: 9px;
+}
+.player-display-time {
+  color: white;
+  font-family: fantasy;
+  font-weight: 100;
+}

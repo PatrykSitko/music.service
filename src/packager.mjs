@@ -23,7 +23,8 @@ export default class Packager {
   static get profiles() {
     return Object.freeze({ "on-demand": "on-demand" });
   }
-  async input(file, outputPath = undefined, concatResolution = true) {
+
+  async input(file, outputPath = undefined, baseURL, concatResolution = true) {
     const resolution = await getResolution(file);
     let passedCheck = true;
     try {
@@ -145,8 +146,8 @@ export default class Packager {
       command = command.concat(
         ` --mpd_output ${
           destination.lastIndexOf("\\") === destination.length - 1
-            ? `"${destination.concat(`${manifestName}-full.mpd`)}"`
-            : `"${destination.concat(`\\${manifestName}-full.mpd`)}"`
+            ? `"${destination.concat(`${manifestName}.mpd`)}"`
+            : `"${destination.concat(`\\${manifestName}.mpd`)}"`
         }`
       );
     } else {

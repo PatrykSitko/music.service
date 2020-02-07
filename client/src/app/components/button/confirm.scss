@@ -1,0 +1,7 @@
+@import "../../styles.shared/variables";
+
+.confirm-button {
+  background-color: $confirmButtonBackgroundColor;
+  width: max-content;
+  padding: 3px;
+}
