@@ -1,4 +1,4 @@
-import selectRegions from "../../../mySQL/select/regions";
+import selectRegions from "../../../mySQL/select/regions.mjs";
 
 export default async client => {
   const regions = {};

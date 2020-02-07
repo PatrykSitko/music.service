@@ -1,8 +1,8 @@
 import { io as socketIO } from "../../bin/www.mjs";
 import emmitConnectionToken from "./connection/emit/pendingConnectionToken.mjs";
 import onConnectionTokenRecieved from "./connection/on/connectionTokenRecieved.mjs";
-import emmitRegions from "./connection/emit/regions";
-import onRequestGenres from "./connection/on/requestGenres";
+import emmitRegions from "./connection/emit/regions.mjs";
+import onRequestGenres from "./connection/on/requestGenres.mjs";
 
 export default {
   connect: () => {
