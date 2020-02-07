@@ -1,3 +1,4 @@
+USE MUSIC_PLAYER;
 create table Users 
 (user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 firstname TEXT NOT NULL,
